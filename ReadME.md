@@ -106,9 +106,10 @@ While you were working on your edits, others may have saved changes to the code 
 4) Check the contents of `apde_story_time_example.txt`. Is this what you expected?
 
 ## Creating & deleting branches
-1) Create a new local branch by typing `<git checkout -b <local-branch>>`. 
-     * This is a short cut combining two commmands: `<git branch <local-branch>>` and `<git checkout <local-branch>>`.
-2) If/when you want to push your branch to the remote, type `<git push <remote-name> <local-branch>:<remote-branch>>`. For example I pushed the danny branch to the remote using `<git push origin danny:danny>`.
+1) Create a new local branch by typing `<git checkout -b <local-branch-name>>`. 
+     * This is a short cut combining two commmands: `<git branch <local-branch-name>>` and `<git checkout <local-branch-name>>`.
+2) If/when you want to push your branch to the remote, type `<git push <remote-name> <local-branch-name>:<remote-branch-name>>`. For example I pushed the danny branch to the remote using `<git push origin danny:danny>`. 
+    * You may have to identify tracking information for the new branch by typing `<git branch --set-upstream-to=origin/<remote-branch-name> <local-branch-name>>`, e.g., `<git branch --set-upstream-to=origin/danny danny>`.
 3) Delete a local branch by typing `<git branch -d <local-branch>>`.
 4) Delte a remote branch by typing `<git push <remote-name> --delete <remote-branch>`. For example, `<git push origin --delete danny>`.
 5) Try it!     
