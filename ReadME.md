@@ -30,18 +30,18 @@ Open `apde_story_time_example.txt` in your apde_story_time directory. There are 
 When you are done, be sure to close the file.
      
 ## Explore the branches
-1) Git allows you to have multiple branches. One basic workflow that shows the utility would be maintaining a functional **production** branch that always runs while working on a **development** branch to create version 2.0. Branches are also often used to create small stand alone functions with these branches often called **feature** branches. 
+1) Git allows you to have multiple branches. One basic workflow that shows the utility would be maintaining a functional **production** branch that always runs while working on a **development** branch to create version 2.0. In this workflow, **feature** branches are then used to create small stand alone functions that will eventually be merged back onto the development branch. 
      * For this tutorial, we will only have a **master** branch and a **danny** branch. 
      * Note that the branch names are up to the creator and so they could be anything he or she wants.
 2) Check for available branches and identify the branch that you are on by typing `<git branch>`. 
-     * The branch that you are currently on will be makred with an asterisk (*). 
+     * The branch that you are currently on will be marked with an asterisk (*). 
 3) Practice switching back and forth between the **master** and **danny** branches by typing `<git checkout master>` and `git checkout danny>`.
      * View the `apde_story_time_example.txt` while you are in a given branch. Then close the file and view it while you are in another branch. How are they different?
 4) When you're finished exploring the branches, ensure you are on the **master** branch. 
 
 ## Edit the the example
 1) Open `apde_story_time_example.txt`
-2) Select one paragraph to edit and be sure to coordinate. If two people edit the same paragraph, we may end up with [merge conflicts](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line), which is never fun.
+2) Select one paragraph to edit and be sure to coordinate. If two people edit the same paragraph, we may end up with [merge conflicts](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line). A merge conflict occurs when Git finds changes to the same line(s) of code and cannot decide which one to select. They are never fun.
 3) Fix the typos in your paragraph.
 4) Save the file.
 
@@ -60,14 +60,15 @@ When you are done, be sure to close the file.
     > no changes added to commit (use "git add" and/or "git commit -a")
      * The first part tells you which branch you are on and whether or not you are up to date. 
         * origin/master is referring to the master branch on the origin (i.e, the remote repository, a.k.a., GitHub repo)
-     * The second part tells you which files have been modified but are not yet staged.
+     * The second part tells you which files have been modified but are not yet staged. (Staging will be defined below.)
      * Note that the second part also informs you that you can stage (pseudo-save) what you've done so far (`<git add <file>>`) or you can drop the modifications to go back to the most recent commit (`<git checkout -- <file>>`).
  
 ## Identify your changes
 1) `<git diff>` will show you the changes that you've made since the last stage or commit (definitions below). 
-2) Tip! Sometimes, when you have many changes, git diff goes on for multiple screens. Hit the space bar to continue to scroll down. To escape at the end, type `<q>`.
-3) Try `<git diff>` to see your changes
-    
+2) Try `<git diff>` to see your changes
+3) **Tip!** Sometimes, when you have many changes, git diff goes on for multiple screens. Hit the space bar to continue to scroll down. To escape at the end, type `<q>`.
+4) **Tip!** If you eventually decide that you like Git Bash (as opposed to working with a GUI like GitHub Desktop), you might want to consider using a tool like [Meld](http://meldmerge.org/) to view your 'diff's.
+
 ## Stage your changes
 1) Saving files in Git is often done in two steps: staging and commiting. 
 2) To stage a file means to prepare it for a commit. You can think of it like a loading dock where your files are waiting for the final command to send them to your Git history. You can stage files multiple times but the changes will only be recorded in the permanent history once you commit them. (So perhaps staging is like engagement and commiting is like marriage? You only produce a paper trail for the latter.) 
@@ -77,7 +78,7 @@ When you are done, be sure to close the file.
 6) Stage the file with your modifications. Then **check your status**. How has your status changed?
 
 ## Commit your changes
-1) `<git commit>` can be thought of as saving your changes to your local repository's Git history. 
+1) `<git commit>` will save your changes to your local repository's Git history. 
 2) `<git commit -m "your meaningful description here"> will commit your staged modifications and tag them with your descriptive message.
 3) `<git commit <file> -m "your meaningful description here:>` is preferred if you've staged multiple files but only want to commit one or want to give it a specific commit message.
 4) **Tip!** `<git commit -a -m "your meaningful description here">` will commit all modified or deleted files without needing to stage them first. However, it will not commit any newly created files. New files always need to be staged. 
@@ -110,11 +111,11 @@ While you were working on your edits, others may have saved changes to the code 
      * This is a short cut combining two commmands: `<git branch <local-branch-name>>` and `<git checkout <local-branch-name>>`.
 2) If/when you want to push your branch to the remote, type `<git push <remote-name> <local-branch-name>:<remote-branch-name>>`. For example I pushed the danny branch to the remote using `<git push origin danny:danny>`. 
     * You may have to identify tracking information for the new branch by typing `<git branch --set-upstream-to=origin/<remote-branch-name> <local-branch-name>>`, e.g., `<git branch --set-upstream-to=origin/danny danny>`.
-3) Delete a local branch by typing `<git branch -d <local-branch>>`.
-4) Delte a remote branch by typing `<git push <remote-name> --delete <remote-branch>`. For example, `<git push origin --delete danny>`.
-5) Try it!     
+3) Delete a *local* branch by typing `<git branch -d <local-branch>>`.
+4) Delte a *remote* branch by typing `<git push <remote-name> --delete <remote-branch>`. For example, `<git push origin --delete danny>`.
+5) Try deleting your local branch.      
 
 ## Finding & adding remote branches
-What should you do if you know another person started a branch with some code that you wanted to examine?
+What should you do if you know another person started a branch with some code that you want to examine?
 1) `<git branch -r>` ... shows you the branches on the remote
 2) `<git checkout -b <local-branch-name> <remote-name>/<remote-branch-name>>` ... copies the remote branch to your local repository
