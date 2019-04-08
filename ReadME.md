@@ -1,8 +1,9 @@
 # APDE Story Time Tutorial
 
-## Install Git Bash
+## Basic set up
 1) Install Git Bash following the directions provided in `<S:\Transfer\DannyColombara\git_training\git_installation_instructions.docx>`
-2) After installing Git bash you're welcome to download [GitHub Desktop](https://desktop.github.com). However, we will only use Git Bash for our tutorial. 
+2) Be sure you've created a GitHub account
+3) After installing Git bash you're welcome to download [GitHub Desktop](https://desktop.github.com). However, we will only use Git Bash for our tutorial. 
 
 ## Clone this repository to your laptop
 1) Open Git Bash
@@ -35,7 +36,11 @@ When you are done, be sure to close the file.
      * Note that the branch names are up to the creator and so they could be anything he or she wants.
 2) Check for available branches and identify the branch that you are on by typing `<git branch>`. 
      * The branch that you are currently on will be marked with an asterisk (*). 
-3) Practice switching back and forth between the **master** and **danny** branches by typing `<git checkout master>` and `git checkout danny>`.
+3) You will likely only see one branch, the **master**
+4) `<git branch -r>` ... shows you the branches on the remote
+5) `<git checkout -b <local-branch-name> <remote-name>/<remote-branch-name>>` copies the remote branch to your local repository
+6) Type `<git checkout -b danny origin/danny>` -- this will copy the **danny** branch and switch your branch locally.
+7) Practice switching back and forth between the **master** and **danny** branches by typing `<git checkout master>` and `<git checkout danny>`.
      * View the `apde_story_time_example.txt` while you are in a given branch. Then close the file and view it while you are in another branch. How are they different?
 4) When you're finished exploring the branches, ensure you are on the **master** branch. 
 
@@ -115,7 +120,3 @@ While you were working on your edits, others may have saved changes to the code 
 4) Delte a *remote* branch by typing `<git push <remote-name> --delete <remote-branch>`. For example, `<git push origin --delete danny>`.
 5) Try deleting your local branch.      
 
-## Finding & adding remote branches
-What should you do if you know another person started a branch with some code that you want to examine?
-1) `<git branch -r>` ... shows you the branches on the remote
-2) `<git checkout -b <local-branch-name> <remote-name>/<remote-branch-name>>` ... copies the remote branch to your local repository
