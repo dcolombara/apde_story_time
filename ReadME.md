@@ -18,15 +18,15 @@
      * `<ls>` lists the contents
      
 ## View the file that you will be editing
-Open `apde_story_time_example.txt` in your apde_story_time directory. There are three ways to do this:
+Open `example.txt` in your apde_story_time directory. There are three ways to do this:
 1) The 'normal' way. 
     * Use Windows explorer, find the file, and double click it to open in with your default text editor
 2) Using Git Bash
-    * Just type `<start apde_story_time_example.txt>`. This should open it in your default text editor.
+    * Just type `<start example.txt>`. This should open it in your default text editor.
 3) View it in Git Bash
    * I don't recommend this, but ... 
-    * `cat apde_story_time_example.txt` ... quickly view smaller files
-    * `less apde_story_time_example.txt` ... better for larger files
+    * `cat example.txt` ... quickly view smaller files
+    * `less example.txt` ... better for larger files
     
 When you are done, be sure to close the file.
      
@@ -41,11 +41,11 @@ When you are done, be sure to close the file.
 5) `<git checkout -b <local-branch-name> <remote-name>/<remote-branch-name>>` copies the remote branch to your local repository
 6) Type `<git checkout -b danny origin/danny>` -- this will copy the **danny** branch and switch your branch locally.
 7) Practice switching back and forth between the **master** and **danny** branches by typing `<git checkout master>` and `<git checkout danny>`.
-     * View the `apde_story_time_example.txt` while you are in a given branch. Then close the file and view it while you are in another branch. How are they different?
+     * View the `example.txt` while you are in a given branch. Then close the file and view it while you are in another branch. How are they different?
 4) When you're finished exploring the branches, ensure you are on the **master** branch. 
 
 ## Edit the the example
-1) Open `apde_story_time_example.txt`
+1) Open `example.txt`
 2) Select one paragraph to edit and be sure to coordinate. If two people edit the same paragraph, we may end up with [merge conflicts](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line). A merge conflict occurs when Git finds changes to the same line(s) of code and cannot decide which one to select. They are never fun.
 3) Fix the typos in your paragraph.
 4) Save the file.
@@ -60,7 +60,7 @@ When you are done, be sure to close the file.
     > (use "git add <file>..." to update what will be committed)  
     > (use "git checkout -- <file>..." to discard changes in working directory)
     >
-    >        modified:   apde_story_time_example.txt
+    >        modified:   example.txt
     > 
     > no changes added to commit (use "git add" and/or "git commit -a")
      * The first part tells you which branch you are on and whether or not you are up to date. 
@@ -79,7 +79,7 @@ When you are done, be sure to close the file.
 2) To stage a file means to prepare it for a commit. You can think of it like a loading dock where your files are waiting for the final command to send them to your Git history. You can stage files multiple times but the changes will only be recorded in the permanent history once you commit them. (So perhaps staging is like engagement and commiting is like marriage? You only produce a paper trail for the latter.) 
 3) `<git add>` is the command for staging your files.
 4) `<git add .>` will stage all of the files that have been modified, but are not yet staged. 
-5) `<git add apde_story_time_example.txt>` will only stage the specific file that you modified.
+5) `<git add example.txt>` will only stage the specific file that you modified.
 6) Stage the file with your modifications. Then **check your status**. How has your status changed?
 
 ## Commit your changes
@@ -109,7 +109,7 @@ While you were working on your edits, others may have saved changes to the code 
 1) When you looked in the **danny** branch above, you saw that there was an additional paragraph and a citation, as compared to the **master** branch. Here we will want to merge the **danny** branch into the the **master** branch.
 2) Be sure you are in your local copy of the **master** branch: `<git checkout master>`.
 3) Then type `<git merge danny>`.
-4) Check the contents of `apde_story_time_example.txt`. Is this what you expected?
+4) Check the contents of `example.txt`. Is this what you expected?
 
 ## Creating & deleting branches
 1) Create a new local branch by typing `<git checkout -b <local-branch-name>>`. 
