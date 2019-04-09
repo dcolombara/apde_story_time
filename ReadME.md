@@ -46,8 +46,8 @@ When you are done, be sure to close the file.
 
 ## Edit the the example
 1) Open `example.txt`
-2) Select one paragraph to edit and be sure to coordinate. If two people edit the same paragraph, we may end up with [merge conflicts](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line). A merge conflict occurs when Git finds changes to the same line(s) of code and cannot decide which one to select. They are never fun.
-3) Fix the typos in your paragraph.
+2) Select one line or a few lines to edit and be sure to coordinate. If two people edit the same lines, we may end up with [merge conflicts](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line). A merge conflict occurs when Git finds changes to the same line(s) of code and cannot decide which one to select. They are never fun.
+3) Fix the typos in your line(s).
 4) Save the file.
 
 ## Check your status
