@@ -1,8 +1,7 @@
 # Glossary
 * **branch**: A variation of our repository's main code along with it's history. A single repostiory may have multiple branches. 
-Checkout: Changing to a different branch. 
+* **checkout**: Changing to a different branch. 
 * **commit**: (n) A single point in Git history, i.e., a revision or version. (v) the process of saving a new snapshot of the code in the current branch. 
-Feature branch: 
 * **fetch**: Used to download data from a remote repository. Differs from "pull" in that fetching just downloads the data; it doesn't integrate this into your working files.  
 * **fork**: Similar to branching, but it makses a clone on the server side (e.g., in GitHub or S:/WORK/Git). Best used when you want to create a potentially seperate project that may never merge back with the source.  
 * **head**: A named reference to the commit at the tip of a branch.
