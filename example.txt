@@ -1,13 +1,17 @@
 1 The son did not shine. 
-2 It was too whet to play. 
-3 So we sat in the hous
+It was too wet to play. 
+So we sat in the house
 4 that cold, cold, whet day. 
+<<<<<<< HEAD
 
 I sat there with Sally. 
+=======
+5 I saht there with Sally. 
+>>>>>>> 7551d8b6d0d44bfa3690e82f4c1e8c73f693a77b
 6 We sat there we too 
-7 and I said how I wish we had something two dew.
+and I said how I wish we had something to do.
 
-8 Too whet to go out.
+BIG SCARY SPIDERS EVERYWHERE! SPIDERS!
 9 To cold to plae baal.
 10 So we sat in the hous. 
 11 We did nuthing at all. 
