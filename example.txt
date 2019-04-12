@@ -2,12 +2,7 @@
 It was too wet to play. 
 So we sat in the house
 4 that cold, cold, whet day. 
-<<<<<<< HEAD
-
 I sat there with Sally. 
-=======
-5 I saht there with Sally. 
->>>>>>> 7551d8b6d0d44bfa3690e82f4c1e8c73f693a77b
 6 We sat there we too 
 and I said how I wish we had something to do.
 
