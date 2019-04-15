@@ -85,7 +85,7 @@ When you are done, be sure to close the file.
 ## Commit your changes
 1) `<git commit>` will save your changes to your local repository's Git history. 
 2) `<git commit -m "your meaningful description here"> will commit your staged modifications and tag them with your descriptive message.
-3) `<git commit <file> -m "your meaningful description here:>` is preferred if you've staged multiple files but only want to commit one or want to give it a specific commit message.
+3) `<git commit <file> -m "your meaningful description here">` is preferred if you've staged multiple files but only want to commit one or want to give it a specific commit message.
 4) **Tip!** `<git commit -a -m "your meaningful description here">` will commit all modified or deleted files without needing to stage them first. However, it will not commit any newly created files. New files always need to be staged. 
 5) Commit your changes to Git Then **check your status**. How has your status changed?
 
